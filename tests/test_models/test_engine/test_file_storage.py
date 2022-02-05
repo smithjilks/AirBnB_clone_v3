@@ -132,5 +132,5 @@ class TestFileStorage(unittest.TestCase):
         state = State()
         storage.new(state)
         storage.save()
-        updated_all = len(storage.all(States))
+        updated_all = len(storage.all(State))
         self.assertEqual(all_states + 1, updated_all)
